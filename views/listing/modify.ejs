@@ -1,0 +1,55 @@
+<% layout("./layout/boilerplate") %>
+
+    <body>
+        <div class="fweight row row-md-2 ">
+            <div class="col col-md-6 offset-md-3 mb-5">
+                <h2>modify listing <%= listid.title %>
+                </h2>
+                <form action="/listing/<%= listid._id %>/?_method=put" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+                    <div class="mb-0">
+                        <label class="form-label" for="title">Title:</label>
+                        <input required class="form-control" type="text" name="listing[title]" id="title"
+                            value='<%= listid.title %>'>
+                        <div class="valid-feedback">title is used to be unique</div>
+                        <div class="invalid-feedback">title is invalid</div>
+                    </div>
+                    <div class="mb-0">
+                        <label class="form-label" for="Description">Description :</label>
+                        <textarea required class="form-control" type="text" name="listing[description]"
+                            id="description"> <%= listid.description %></textarea>
+                        <div class="valid-feedback">title is used to be unique</div>
+                        <div class="invalid-feedback">title is invalid</div>
+                    </div>
+                     <div class="image ">
+                     <img src="<%= originalImg %>" class="rounded offset-md-2 mb-3 mt-1">
+
+                     </div>
+                    <div class="mb-3  ">
+                        <div class="">   
+                            <label class="form-label" for="image">Image:</label>
+                            <input class="form-control" name="listing[image]" rows="1" id="image"
+                                 type="file"></input>
+                           
+                        </div>
+
+                    </div>
+                    <div class="mb-0">
+                        <label class="form-label" for="Price">Price:</label>
+                        <input required class="form-control" type="number" name="listing[price]" id="price"
+                            value='<%= listid.price %>'>
+                        <div class="valid-feedback">price</div>
+                        <div class="invalid-feedback">price is invalid</div>
+                    </div>
+                    <div class="mb-0">
+                        <label class="form-label" for="Location">Location</label>
+                        <input required class="form-control" type="text" name="listing[location]" id="location"
+                            value='<%= listid.location %>'>
+                        <div class="valid-feedback">location is used to be accurate</div>
+                        <div class="invalid-feedback">location is invalid</div>
+                    </div>
+                    <button class="btn btn-dark">add</button>
+                </form>
+            </div>
+        </div>
+
+    </body>

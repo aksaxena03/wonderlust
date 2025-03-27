@@ -1,0 +1,58 @@
+
+
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="/"><i class="fa-brands fa-airbnb brand "></i> <span class="brname mediaSeven">airbnb</span></a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      
+      
+
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link" aria-current="page" href="/">Home</a> -->
+             
+        </div>   
+      </div>
+      <form class="d-flex alinSearch"  action="/listing/search/" method="post">
+        <input class="form-control me-2 searchip search-box1" type="search" name="place" placeholder="Search Your Place name" aria-label="Search">
+        <button class="btn btn-outline-success  searchip search-box2" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+      </form>
+
+      <div class="navbar-nav ms-auto mediaSeven">
+        <a class="nav-link mediaSeven" href="/listing"><b>Airbnb your home</b></a>
+        <a class="nav-link mediaSeven" href="#"><i class="fa-solid fa-globe "></i></a>
+      </div>
+
+      <div class="navbar-nav ms-auto ">
+        
+        <li class="nav-item dropdown mediaSeven ">
+          <a class="nav-link btn-outline-secondary nav-btn sh" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-circle-user nav-icon"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <% if(userlog){ %> 
+            <!--  here userlog is initializ in app.js which userlog use to know for user is log in or logout  -->
+              <li><a class="dropdown-item" href="/listing/user/logout">LogOut</a></li>
+            <%}%>
+            <% if(!userlog){ %>
+              <li><a class="dropdown-item" href="/listing/user/login">LogIn</a></li>
+              <li><a class="dropdown-item" href="/listing/user/signup">SignUp</a></li>
+            <%}%>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="nav-link" href="/listing/new">New form</a> </li>
+            <li><a class="dropdown-item" href="/listing">Airbnb your home</a></li>
+            <li><a class="dropdown-item" href="#">Host your experience</a></li>
+            <li><a class="dropdown-item" href="#">Help Center</a></li>
+          </ul>
+        </li>
+
+      </div>
+      
+    </div>
+  </nav>
+
+
+ 

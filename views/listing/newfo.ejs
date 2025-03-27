@@ -1,0 +1,48 @@
+<% layout("./layout/boilerplate") %>
+
+    <body>
+        <div class="fweight row row-md-2 ">
+            <div class="col col-md-6 offset-md-3 mb-5 ">
+                <h2>Create a new listing</h2>
+                <form action="/listing" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+                    <div class="mb-3 ">
+                        <label class="form-label" for="title">Title:</label>
+                        <input class="form-control" type="text" name="listing[title]" id="title"
+                            placeholder="title of place" required>
+                        <div class="valid-feedback">looks good</div>
+                        <div class="invalid-feedback">this has to be required</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Description">Description :</label>
+                        <textarea class="form-control" type="text" name="listing[description]" id="description"
+                            placeholder="about place" required></textarea>
+                        <div class="valid-feedback">looks good</div>
+                        <div class="invalid-feedback">short detail is enough</div>
+                    </div>
+                    <div class="row row-md-2">
+                        <div class="mb-3 col-md-4">
+                            <label class="form-label" for="image">Image:</label>
+                            <input class="form-control" name="listing[image]" rows="1" id="image"
+                                 type="file"></input>
+                            <div class="invalid-feedback">image of location is important</div>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label class="form-label" for="Price">Price:</label>
+                            <input class="form-control" type="number" name="listing[price]" id="price"
+                                placeholder="Price" required>
+                            <div class="valid-feedback">Price used to be effective as per location.</div>
+                            <div class="invalid-feedback">price is required</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Location">Location</label>
+                        <input class="form-control" type="text" name="listing[location]" id="location"
+                            placeholder="place location" required>
+                        <div class="valid-feedback">location -address of listing place</div>
+                        <div class="invalid-feedback">without location it did not found in search</div>
+                    </div>
+                    <button class="btn btn-dark">add</button>
+                </form>
+            </div>
+        </div>
+    </body>

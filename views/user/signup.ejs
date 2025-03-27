@@ -1,0 +1,35 @@
+<% layout("./layout/boilerplate") %>
+
+    <body>
+        <div class="fweight row row-md-2 ">
+            <div class="col col-md-6 offset-md-3 mb-5">
+                <h2>Create a new listing</h2>
+                <form action="/listing/user/signup" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3 ">
+                        <label class="form-label" for="Username">Username </label>
+                        <input class="form-control" type="text" name="username" id="username"
+                            placeholder="Username" required>
+                        <div class="valid-feedback">looks good</div>
+                        <div class="invalid-feedback">this has to be required</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email :</label>
+                        <input class="form-control" type="text" name="email" id="email"
+                        placeholder="Email" required>
+                        <div class="valid-feedback">looks good</div>
+                        <div class="invalid-feedback">short detail is enough</div>
+                    </div>
+                    <div class="row row-md-2">
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password:</label>
+                            <input class="form-control" type="password" name="password" id="password"
+                            placeholder="Password" required>
+                        </div>
+                    </div>    
+                    <p><button class="btn btn-success">Signup</button>&nbsp; &nbsp;
+                    <a href="/listing/user/login" class="link-underline-light">already user?</a></p>
+
+                </form>
+            </div>
+        </div>
+    </body>

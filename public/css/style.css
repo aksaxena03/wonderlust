@@ -1,0 +1,337 @@
+body {
+    font-family: "Plus Jakarta Sans" !important;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* .form-control {
+    width: 16rem !important;
+} */
+
+button.btn.btn-outline-white.flex.btn-edit {
+    margin-left: 0.5rem !important;
+}
+
+.container {
+    flex: 1;
+    max-width: 100% !important;
+    padding-left: 2rem !important;
+}
+
+.brand, .brname {
+    color: rgb(255, 56, 92);
+}
+
+.brand {
+    font-size: 2.2rem;
+}
+
+.brname {
+    font-weight: 650;
+    font-size: 1.5rem;
+    padding-bottom: .2rem;
+}
+
+.navbar {
+    height: 5rem;
+    font-size: 1.1rem;
+}
+
+.sh {
+    margin-bottom: .2rem !important;
+}
+
+.f-link a, .f-infoSocial {
+    text-decoration: none;
+    color: black;
+    padding-left: .5rem;
+}
+
+.f-infoSocial i {
+    padding-left: .2rem;
+    font-size: 1.2rem;
+}
+
+.f-link a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+.f-link, .f-info, .f-company {
+    width: 100%;
+    padding: .8% 0;
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 2.8rem !important;
+}
+
+.card-group {
+    margin: auto !important;
+}
+
+.col {
+    margin-right: 0rem !important;
+    width: 20.5rem !important;
+}
+
+@media (max-width: 700px) {
+    .col {
+        width: 100% !important;
+    }
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    height: 16rem !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    padding: .8rem 0 0 .3rem;
+}
+
+.show {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: .2;
+    background-color: white;
+}
+
+.fweight {
+    font-weight: 700;
+}
+.fweight.row.row-md-2 {
+    padding: 0 20rem 0 0;
+}
+
+.btn-show {
+    display: flex;
+    flex-direction: row;
+}
+
+.bord {
+    max-width: 100% !important;
+}
+
+.nav-btn {
+    border: 1px solid rgba(0, 0, 0, 0.575) !important;
+    border-radius: 18rem;
+    margin-right: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.sh:hover {
+    box-shadow: 0px 0px 4px 0px rgba(18, 22, 24, 0.473) !important;
+}
+
+.nav-icon {
+    font-size: 1.8rem !important;
+    margin-left: .5rem !important;
+}
+
+.searchip {
+    margin-right: 0 !important;
+    border-radius: 18rem !important;
+}
+
+.search-box1:hover {
+    box-shadow: 0px 0px 4px 0px rgba(18, 22, 24, 0.473) !important;
+}
+
+.search-box2 {
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+    background-color: rgb(255, 56, 92) !important;
+    border: none !important;
+    margin-left: -3.2rem !important;
+    margin-top: .1rem !important;
+    height: 2.1rem !important;
+}
+
+.search-box2:hover {
+    background-color: rgb(204, 13, 48) !important;
+}
+
+.alinSearch {
+    margin-left: 5rem !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -104px !important;
+}
+
+.catgr {
+    display: flex;
+    margin: auto !important;
+    flex-shrink: 1 !important;
+}
+
+.itembox {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content !important;
+    padding-left: .5rem;
+    height: 3rem;
+    font-size: inherit;
+}
+
+.items {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1 !important;
+    overflow: hidden;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 2rem;
+    opacity: .7;
+    flex-shrink: 1 !important;
+}
+
+.item:hover {
+    opacity: 1;
+}
+
+.tax-info {
+    display: none;
+}
+
+.btn-edit {
+    border: 1px solid rgb(163, 162, 162) !important;
+    min-width: fit-content !important;
+    border-radius: .7rem !important;
+    background-color: unset !important;
+    max-width: fit-content;
+}
+
+.btn-edit:hover {
+    border: 1px solid black !important;
+    box-shadow: 0px 0px 4px 0px rgba(18, 22, 24, 0.473) !important;
+}
+
+.FooterBottom {
+    position: fixed !important;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding: .5rem 3rem .1rem 3rem !important;
+    text-decoration: none !important;
+}
+
+.FooterBotm > a {
+    text-decoration: none !important;
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+.mediaFooter {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mediaSeven {
+        display: none !important;
+    }
+
+    li.nav-item.dropdown.mediaSeven {
+        display: block !important;
+    }
+    nav.navbar.sticky-bottom.FooterBottom {
+        border-top: 1px solid #DDDDDD;
+    }
+    a.nav-link.btn-outline-secondary.nav-btn.sh {
+        margin: 0 !important;
+        padding: 0.4rem !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 1 0 auto !important;
+       
+        }
+}
+
+
+@media (max-width: 700px) {
+    .mediaSeven {
+        display: none !important;
+    }
+
+    input.form-control.me-2.searchip.search-box1 {
+        min-width: 30rem;
+        min-height: 3rem;
+        transition: all 0.3s ease;
+    }
+
+    form.d-flex.alinSearch {
+        margin-left: 0 !important;
+    }
+
+    button.btn.btn-outline-success.searchip.search-box2 {
+        margin-top: 0.3rem !important;
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 670px) {
+    input.form-control.me-2.searchip.search-box1 {
+        min-width: 70% !important;
+        transition: all 0.3s ease;
+    }
+
+    li.nav-item.dropdown.mediaSeven {
+        display: none !important;
+    }
+
+    input.form-control.me-2.searchip.search-box1 {
+        min-width: 141% !important;
+        transition: all 0.3s ease;
+    }
+
+    .mediaFooter {
+        display: block !important;
+    }
+    .container{
+        padding:0 0.7rem  !important;
+    }
+    .f-info {
+        margin-bottom: 6rem;
+    }
+}
+
