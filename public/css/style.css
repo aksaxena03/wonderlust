@@ -283,9 +283,7 @@ button.btn.btn-outline-white.flex.btn-edit {
         flex: 1 0 auto !important;
        
     }
-    .fweight.row.row-md-2 {
-        padding: 0;
-    }
+    
 
 }
 
@@ -294,7 +292,9 @@ button.btn.btn-outline-white.flex.btn-edit {
     .mediaSeven {
         display: none !important;
     }
-
+    .fweight.row.row-md-2 {
+        padding: 0;
+    }
     input.form-control.me-2.searchip.search-box1 {
         min-width: 30rem;
         min-height: 3rem;
@@ -318,7 +318,9 @@ button.btn.btn-outline-white.flex.btn-edit {
         min-width: 70% !important;
         transition: all 0.3s ease;
     }
-
+    .fweight.row.row-md-2 {
+        padding: 0;
+    }
     li.nav-item.dropdown.mediaSeven {
         display: none !important;
     }
