@@ -282,7 +282,11 @@ button.btn.btn-outline-white.flex.btn-edit {
     .col-md-6 {
         flex: 1 0 auto !important;
        
-        }
+    }
+    .fweight.row.row-md-2 {
+        padding: 0;
+    }
+
 }
 
 
